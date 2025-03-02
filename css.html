@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="./note.css" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/mdatikulislam41/git-hub-command/56669156811a510a9829ae1d75fc61c33fc3df70/image/Git-Icon-1788C.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./css.html" aria-current="page">CSS</a>
+          <a href="./aria.html">ARIA</a>
+          <a href="./node.html">Node</a>
+          <a href="./resource.html">Resource</a>
+          <a href="./sheet.html">sheet</a>
+        </nav>
+      </header>
+    <main>
+      <section>
+        <div class="css selector">
+            <h2>CSS Selecor</h2>
+            <div class="list">
+             <ul>
+                 <li>Common Selectors</li>
+                 <li>Child Selectors</li>
+                 <li>Sibling Selectors</li>
+                 <li>Attribute Selectors</li>
+                 <li>Pseudo-classes</li>
+                 <li>Position Pseudo-classes</li>
+                 <li>Target Pseudo-class</li>
+                 <li>Empty Pseudo-class</li>
+                 <li>Negation Pseudo-class</li>
+                 <li>Textual Pseudo-elements</li>
+                 <li>Content Pseudo-elements</li>
+                 <li>Single Colon (:) versus Double Colons (::)</li>
+                 <li>Selector Browser Support</li>
+                 <li>Source: <a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">Check</a></li>
+         
+         
+             </ul>
+            </div>
+         </div>
+         <div class="css css_unit">
+             <h2>Css Unit</h2>
+             <div class="list" >
+                 <ul>
+                     <li>1em = font-size of parent size(x)</li>
+                     <li>2em = font-size of parent size(2x)</li>
+                     <li>1.5em = font-size of parent size(1.5x)</li>
+                     <span>jodi first parent e font-size na thake then next parent</span>
+                 </ul>
+                 <ul>
+                     <li>1rem = browser font size(x)</li>
+                     <li>2rem = browser font size(2x)</li>
+                     <li>1.5rem = browser font size(1.5x)</li>
+                     <span>how to find browser font size: setting then write: font-size</span>
+                     <span>browser font-size = 1rem;</span>
+                     <span>calculate of rem: let browser font-size: 16px; element size: 20px;
+                         then rem: 20/16=1.25rem;
+                     </span>
+                 </ul>
+             </div>
+         
+         </div>
+         <div class="css css_style">
+             <h2>CSS Inherit</h2>
+             <div class="list">
+              <ul>
+                  <li>Inherit: parent er style set korar jonno</li>
+                  <li>style set na korle browser er style set kore. tokon inherit dile parrent er style nibe</li>
+                  <li>Ex: color: inherit;</li>
+                  <li>{*} eta global selector, inherit na. eta te style dile, all element e set hobe</li>
+          
+              </ul>
+             </div>
+          </div>
+          <div class="css css_box_model">
+             <h2>CSS Box Model</h2>
+             <div class="list">
+              <ul>
+                  <li>ব্লক ইলিমেন্টে ধরি width:550px এবং padding: 10px, border: 5px তাহলে ব্লক এলেমেন্টের টোটাল width হবে = 550+ (10+10) + (5+5) =580px; এইটা ফিক্স করার জন্য box-sizing: border-box; ব্যবহার করলে ফিক্স হবে, তখন উইথ হবে: 550(with padding, border)</li>
+                  <li>Inline এলিমেন্টে margin দিলে margin নেনা এটা ফিক্স করার জন্য display: inline-block; দিতে হবে, এর মানে কিছুটা inline, কিছুটা Block হিসেবে কাজ করে . </li>
+                  <li>দুটি Block ইলিমেন্টের পাশাপাশি দিকে দুইটাতেই ভিন্ন ভিন্ন মার্জিন দেয়া যাবে না, দিলে যেটির বেশি মার্জিন সেটি কাজ করবে</li>
+                  <li>box-sizing: border-box; dileo border er niche div er backroun-color gese, tai border er nise jaoa off korte, box-sizing: border-box;</li>
+              </ul>
+             </div>
+          </div> 
+          <div class="css css_box_model">
+             <h2>CSS Positioning</h2>
+             <div class="list">
+              <ul>
+                  <li><a href="https://www.youtube.com/watch?v=ROvf_S2klJs">Video</a></li>
+              </ul>
+             </div>
+          </div>
+          <div class="css css_grid">
+             <h2>CSS Grid</h2>
+             <div class="list">
+              <br>
+                 <li>display:grid;</li>
+                  <li>grid-template-columns: 200px 200px;</li>
+                  
+                  <li> grid-template-rows: 100px 200px;</li>
+                  <li>grid-template-columns: 100px auto 100px</li>
+                  <li>grid-template-columns: 1fr 2fr 1fr;
+                     grid-template-rows: 1fr 2fr 1fr ;</li>
+                     <li>grid-template: 1fr 2fr 1fr / 1fr 2fr 1fr;</li>
+                     <span>grid-template: rows / colums</span>
+                     <li> grid-gap: 2px;
+                         grid-column-gap: 1px;
+                         grid-row-gap: 2px;</li>
+                     <li>grid-template: repeat(3 , 1fr) / repeat(4, 1fr);</li>
+                     <span>line = column sonkha + 1 </span>
+                     <span>firts line thke suro korle 1, last line theke suro korle -1 </span>
+                     <li>.item{grid-column-start: 1;
+                         grid-column-end: -1;
+                         grid-column: 1 / 3;
+                         grid-column: 1 / -1;
+                         grid-column: 1 / span 3; <br>
+                         <b>grid-column: auto / span 3; grid-row: auto / span 3: <span> এর মানে আইটেমটি যেখানে আছে সেখান  থেকে শুরু করে ৩ লাইন পর্যন্ত যাবে</span></b> <spna>Shortcut: grid-column: span 3; </spna>
+                     }</li>
+                     <li>সাধারণভাবে 12 টি কলাম নিয়ে ওয়েবসাইট তৈরি করা হয়</li>
+                     <b>Visualise layout: </b> </br>
+                         grid-template-areas:
+                         "h h h h h h h h h h h h h h" </br>
+                         "m m m m i i i i i i i i i i" </br>
+                         "f f f f f f f f f f f f f f" ;</br>
+                         grid-area: h; </br><b>grid-area for grid item</b></br>
+         
+                        <span> কোন column অথবা row ফাঁকা রাখতে চাইলে ডট ব্যবহার করব grid-template-areas তে  </span>
+         
+                     </li>
+                     <li> <b>Responsive Grid:</b></li>
+                     <li>grid-template-columns: repeat(auto-fit, 200px);<span>প্রত্যেকটি কলামের উইথ ২০০ করে ধরা হয়েছে এবং শেষের কলামের উইথ যদি ২০০ পিচ্ছিল খালি হয় তাহলে পরবর্তী একটি আইটেম নিবে।</span></li>
+                     <li>কিন্তু যদি ধরে একশত ৫০ পিস দিলে খালি হয়েছে তাহলে দেখতে খারাপ দেখাবে তাই এটা ফিক্স করার জন্য minmax(min-width,max-width );</li>
+                     <li>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); <span>যতক্ষণ পর্যন্ত ২০০ পিক্সেল না হবে ততক্ষণ পর্যন্ত কলামগুলো 1fr ধরা হবে</span><br><b>auto-fit: দিলে কোন স্পেস(width) ফাঁকা থাকবে না, খালি(width) জায়গা হলে তা কলাম কে বন্টন করে দিয়ে পূরণ করবে </b> কিন্তু <b>auto-fill: </b>দিলে খালি জায়গা থাকলে তা পূরণ করবে না . পূরণ না করে আরো width এর কলাম তৈরি করবে</li>
+                     <li><b>auto-fit </b> ব্যবহার করলে নিচে অটোমেটিক Row তৈরি হলে তার Height দেয়ার জন্য <b>grid-auto-rows: 100px;</b> বলে দিতে পারি (px, fr) <br> Note: যদি অটো কলাম ফিক্স করতে = grid-auto-columns: 100px;</li>
+         
+                     <li>Grid Div Position(কোথায় Grid থাকবে) : <b>justify-content, align-content</b></li>
+                     <li>Grid itme এর content কোথা থেকে শুরু হবে: <b>justify-items,align-items</b></li>
+                     <li>কোন নির্দিষ্ট আইটেমের কনটেন্ট ঠিক করতে ওই কন্টেনে একটি ক্লাস ধরে ওই ক্লাসে ব্যবহার করতে হবে<b> .itme{justify-self:value,align-self:value} </b></li>
+                     <li><b>grid-auto-flow:dense; </b><br>
+                         itme কলম বরাবর অথবা রো বাড়াবার বড় হলে তখন অন্য আইটেম না আসতে পারার জন্য খালি থাকে , তখন এটি ফিক্স করার জন্য এটি ব্যবহার করতে হয় .
+                     </li>
+         
+                    
+                  
+              </ul>
+             </div>
+          </div>
+          <div class="css css_dynamic_functions">
+              <h2>CSS Dynamic Function</h2>
+              <div class="list">
+                 <ul>
+                     <li> :root(); var(); calc(); <span><a href="https://www.youtube.com/watch?v=89P8RCsKgoA">Video link</a></span></li>
+                     
+             
+                </ul>
+              </div>
+              <div class="next_learning">Next <a href="https://www.youtube.com/watch?v=vBJH0mF01wk">Video</a></div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>

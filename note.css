@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --section-padding: 25px;
+  --bg-color: #f0efe7;
+}
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+.container {
+  padding-top: 50px;
+}
+.first-padding {
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+}
+body {
+  background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
+}
+.header-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Mobile users */
+@media (max-width: 600px) {
+  .content {
+    width: 98%;
+  }
+}
+
+/* Tablet users */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    width: 80%;
+  }
+}
+ul {
+  padding-left: 10px;
+}
+ul li {
+  list-style: number;
+  list-style-position: inside;
+  font-size: 18px;
+}
+
+.details-content {
+  background-color: var(--bg-color);
+}
+span.link {
+  color: blue;
+}
+/* after before start */
+summary {
+  position: relative;
+  text-align: center;
+}
+summary::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  text-align: center;
+  right: 1%;
+  top: 50%;
+}
+summary::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  text-align: center;
+  left: 1%;
+  top: 50%;
+}
+/* after before end */
+.css {
+  width: 80vw;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 2.25rem;
+}
+.css h2 {
+  text-align: center;
+}
+.list ul li {
+  list-style: decimal;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.next_learning {
+  background-color: aqua;
+  padding: 40px;
+  margin: auto;
+}
+
+nav {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  width: max-content;
+}
+nav a:hover::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #4f260d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+nav [aria-current="page"] {
+  background-color: #bbb;
+  color: #000;
+  border-bottom: 0.25em solid #444;
+}
+pre {
+  overflow: scroll;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.gap {
+  gap: 5px;
+}

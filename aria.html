@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARIA</title>
+    <link rel="stylesheet" href="./note.css" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/mdatikulislam41/git-hub-command/56669156811a510a9829ae1d75fc61c33fc3df70/image/Git-Icon-1788C.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./css.html">CSS</a>
+        <a href="./aria.html" aria-current="page">ARIA</a>
+        <a href="./node.html">Node</a>
+        <a href="./resource.html">Resource</a>
+        <a href="./home-work.html">H.W</a>
+        <a href="./sheet.html">sheet</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container first-padding">
+          <div class="content">
+            <details>
+              <summary>ARIA role</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    role="button,navigation,textbox,heading,radio,combobox,menuitem,dialog"
+                  </li>
+                  <li><span>combobox থাকলে: লিখতে এবং সিলেক্ট করতে পারবে  </span></li>
+                  <li>aria-expanded="false" → ড্রপডাউন খোলা আছে কি না সেটি নির্দেশ করে।</li>
+                  <li>aria-autocomplete="list" → ইনপুট টাইপ করার সময় সাজেশন লিস্ট দেখাবে।</li>
+                  <li>aria-controls="suggestions" → ইনপুটটি কোন লিস্টের সাথে সংযুক্ত তা জানায়।</li>
+                  <li>role="listbox" এবং role="option" → অপশনগুলোর জন্য ব্যবহৃত হয়।</li>
+                  <pre><code>
+                    
+&lt;label for="search">Search:&lt;/label&gt;
+&lt;input type="text" id="search" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="suggestions"&gt;
+
+&lt;ul id="suggestions" role="listbox"&gt;
+    &lt;li role="option">Apple&lt;/li&gt;
+    &lt;li role="option">Banana&lt;/li&gt;
+    &lt;li role="option">Cherry&lt;/li&gt;
+&lt;/ul&gt;
+
+                    </code></pre>
+                
+                </li>
+                  <li>
+                    aria-label="...",aria-hidden="true",aria-expanded="true",aria-expanded="false"
+                  </li>
+                  <li>Important: <code>aria-controls=""</code></li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>aria-current</summary>
+              <div class="details-content">
+                <ul>
+                  <li>aria-current="page"</li>
+                  <li>aria-current="step"</li>
+                  <li>aria-current="location"</li>
+                  <li>aria-current="date"</li>
+                  <li>aria-current="time"</li>
+                  <li>aria-current="true"</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+                <summary>aria-modal</summary>
+                <div class="details-content">
+                  <ul>
+                    <li>aria-modal="true"</li>
+                    <li>aria-modal="false"</li>
+                  </ul>
+            </details>
+            <details>
+                <summary>aria-required</summary>
+                <div class="details-content">
+                  <ul>
+                    <li>aria-required="true"</li>
+                    <li>aria-required="false"</li>
+                    
+                  </ul>
+            </details>
+            <details>
+                <summary>aria-invalid</summary>
+                <div class="detaits-content">
+                    <ul>
+                        <li>aria-invalid="true" → ইনপুটে ত্রুটি আছে</li>
+                        <li>aria-invalid="false" → ডিফল্ট মান (ত্রুটি নেই)</li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>hidden vs inert</summary>
+                <div class="details-content">
+                    <ul>
+                        <li><pre><code>&lt;div hidden&gt;&lt;/div&gt;&lt;div inert&gt;&lt;/div&gt;</code></pre></li>
+                        <li>hidden → স্ক্রিন রিডার পড়বে না</li>
+                        <li>inert → স্ক্রিন রিডার পড়বে</li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>AccessAbility-Checker</summary>
+                <div class="details-content">
+                    <ul>
+                        <li><a href="https://www.accessibilitychecker.org/">accessibilitychecker</a></li>
+                        <li><a href="https://www.w3.org/WAI/roles/developers/">accessibilitychecker</a></li>
+                    </ul>
+                </div>
+            </details>
+           
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
