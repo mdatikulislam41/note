@@ -126,6 +126,7 @@ nav a {
   padding: 10px;
   position: relative;
   width: max-content;
+  font-size: 18px;
 }
 nav a:hover::before {
   content: "";
