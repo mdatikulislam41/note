@@ -167,3 +167,10 @@ pre {
 .gap {
   gap: 5px;
 }
+a.active {
+  color: tomato;
+}
+
+a.finished {
+  color: #8484cd;
+}
