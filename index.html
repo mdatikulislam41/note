@@ -24,6 +24,7 @@
         <a href="./calculator.html">calculator</a>
         <a href="./svg.html">svg</a>
         <a href="./animation.html">animation</a>
+        <a href="./animation.html">Best Practice</a>
       </nav>
     </header>
     <main>
@@ -382,6 +383,33 @@
                     0.3); }
                   </li>
                 </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Scroll CSS</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    scroll-behavior: smooth; scroll-padding: 8rem; <br />
+                    <span
+                      >একটি বাটন এ ক্লিক দেয়ার পরে একটা সেকশনে গেলে। ওই সেকশন
+                      উপরে কত টুকু স্পেস রাখবে।
+                    </span>
+                  </li>
+                  <li>
+                    container{ scroll-snap-type: y mandatory; [x mandatory] [y
+                    mandatory]; }
+                    <span><br /></span>
+                    child{ scroll-snap-align: start; [start, center, end] }
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Design List</summary>
+              <div class="details-content">
+                @counter-style crown { system: cyclic; symbols: "\1F451";
+                suffix: ""; } ul { list-style: crown; }
               </div>
             </details>
           </div>
