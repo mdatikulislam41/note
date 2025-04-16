@@ -358,6 +358,22 @@ a:not([href]),a:not([class]){
                 </ul>
               </div>
             </details>
+            <details>
+              <summary>Hover for moble and Tab for Desktop</summary>
+              <div class="details_content">
+                <pre>
+                  a:focus:not(:focus-visible) {
+                    outline: none;
+                  }
+                  a:focus-visible {
+                    outline: 2px solid blue;
+                  }
+                  .parent:focus-visible .focus-item{
+                    opacity: 1;
+                  }
+                </pre>
+              </div>
+            </details>
           </div>
         </div>
       </section>
