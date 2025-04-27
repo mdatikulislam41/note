@@ -59,18 +59,19 @@
                   <li>npm install tailwindcss @tailwindcss/cli</li>
                   <li>
                     <p>
-                      একটি src ফোল্ডার বানিয়ে তার ভিতর input.css ফাইল তৈরি করুন
-                      এবং তার ভিতরে @import "tailwindcss"; রাখুন এবং সেভ করুন।
+                      একটি assets/css ফোল্ডার বানিয়ে তার ভিতর input.css ফাইল
+                      তৈরি করুন এবং তার ভিতরে @import "tailwindcss"; রাখুন এবং
+                      সেভ করুন।
                     </p>
                   </li>
                   <li>
-                    npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css
-                    --watch
+                    npx @tailwindcss/cli -i ./assets/css/input.css -o
+                    ./assets/css/output.css --watch
                   </li>
                   <li>
                     <p>
                       এসএসসি ফোল্ডারের ভিতরে index.html ফাইল বানিয়ে। তাতে
-                      <link href="./output.css" rel="stylesheet" />
+                      <link href="./assets/cc/output.css" rel="stylesheet" />
                     </p>
                   </li>
                   <li>
@@ -86,8 +87,8 @@
                   <li>
                     <p>
                       নিম্নের কমান্ডটি আবার রান করলে কাজ করবে: npx
-                      @tailwindcss/cli -i ./src/input.css -o ./src/output.css
-                      --watch
+                      @tailwindcss/cli -i ./assets/css/input.css -o
+                      ./assets/css/output.css --watch
                     </p>
                     <strong>সহজ উপায়: </strong>
                     <div class="image">
