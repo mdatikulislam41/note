@@ -38,6 +38,60 @@
         <div class="container first-padding">
           <div class="content">
             <details>
+              <summary>Tailwind insatall By cli</summary>
+              <div class="details-content">
+                <ul>
+                  <li>npm init -y</li>
+                  <li>npm install tailwindcss @tailwindcss/cli</li>
+                  <li>
+                    <p>
+                      একটি assets/css ফোল্ডার বানিয়ে তার ভিতর input.css ফাইল
+                      তৈরি করুন এবং তার ভিতরে @import "tailwindcss"; রাখুন এবং
+                      সেভ করুন।
+                    </p>
+                  </li>
+                  <li>
+                    npx @tailwindcss/cli -i ./assets/css/input.css -o
+                    ./assets/css/output.css --watch
+                  </li>
+                  <li>
+                    <p>index.html ফাইল বানিয়ে। তাতে output.css লিংক করাবো</p>
+                  </li>
+                  <li>
+                    <p>
+                      Note: এখন আমরা input.css এর ভিতরে আমাদের কাস্টম সিএসএস কোড
+                      রাখবো।
+                    </p>
+                  </li>
+                  <li>
+                    যদি আমরা terminal অথবা vs -code ক্লোজ করি। তারপরে যদি আবার
+                    নতুন করে কাস্টম কোড লিখি তাহলে সেটি কাজ করবেন না।
+                  </li>
+                  <li>
+                    <p>
+                      নিম্নের কমান্ডটি আবার রান করলে কাজ করবে: npx
+                      @tailwindcss/cli -i ./assets/css/input.css -o
+                      ./assets/css/output.css --watch
+                    </p>
+                    <strong>সহজ উপায়: </strong>
+                    <div class="image">
+                      <img src="./src/images/node/1.png" alt="" />
+                      <img src="./src/images/node/2.png" alt="" />
+                    </div>
+                    <strong>node run dev</strong>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/watch?v=rQNC4ZeqZ2I"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Video</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details>
               <summary>Tools</summary>
               <div class="details-content">
                 <ul>
