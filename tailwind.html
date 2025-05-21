@@ -37,6 +37,7 @@
       <section>
         <div class="container first-padding">
           <div class="content">
+            <!-- Installation -->
             <details>
               <summary>Tailwind insatall By cli</summary>
               <div class="details-content">
@@ -233,6 +234,101 @@ class="max-md:bg-orange-500 max-w-lg max-w-screen-lg"</pre
                   <li>
                     <a href="https://hextotailwind.com/" target="_blank"
                       >Hex- to -Tailwind</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <!-- Group  -->
+            <details>
+              <summary>Group</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    এটা কাজ করে প্যারেন্ট এবং চাইল্ডের সাথে। যখন প্যারেন্টের ওপর
+                    কোনো ইফেক্ট করা হয় তখন চাইল্ড এ ইফেক্ট করবে। যেমন Parent এ
+                    Hover করলাম চাইল্ডে একটু চেঞ্জ হলো।
+                  </li>
+                  <li>
+                    <pre><div class="group size-full bg-indigo-500">
+                    <h2 class="text-red-200">Bangladesh is a big <span class="hidden group-hover:inline transition-all duration-1000">Country</span></h2>
+                   </div></pre>
+                  </li>
+                  <li>
+                    <pre>
+                      <div class="parent group flex gap-4">
+                        <div class="card"> 
+                        <button class="bg-red-200 px-10 py-2 uppercase cursor-pointer group-hover:bg-fuchsia-400">One</button>
+                      </div>
+                      <div class="card"> 
+                        <button class="bg-red-200 px-10 py-2 uppercase cursor-pointer group-hover:bg-rose-700">One</button>
+                      </div>
+                      </div>
+                    </pre>
+                  </li>
+                  <li>
+                    <p>
+                      অনেকগুলো গ্রুপ ইউজ করলে তখন মেন্টেন্স করতে সমস্যা হয় তাই
+                      গ্রুপের ভিন্ন ভিন্ন নাম দেওয়া যায় নিম্নের উপায়
+                    </p>
+                  </li>
+                  <li>
+                    <pre>
+                    group/first, group-hover/first:bg-fuchsia-400
+                  </pre
+                    >
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <!-- Peer  -->
+            <details>
+              <summary>Peer</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    Group মতো কিন্তু এটা কাজ করে Sibling এর সাথে Sibling এর।
+                  </li>
+                  <li>
+                    <pre><input
+                      type="checkbox"
+                      id="terms"
+                      class="peer hidden "
+                    />
+                
+                    <!-- Label that reacts to peer and group -->
+                    <label
+                      for="terms"
+                      class="cursor-pointer px-4 py-2 border-2 border-gray-300 rounded-md transition-all duration-300
+                             group-hover:border-blue-400 peer-checked:bg-blue-500 peer-checked:text-white peer-focus:ring-2 peer-focus:ring-blue-300"
+                    >
+                      I agree to the terms
+                    </label></pre>
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <!-- Group & Peer Variants -->
+            <details>
+              <summary>Group & Peer Variants</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    <img src="./src/images/peer&group.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <!-- Cheet Sheet -->
+            <details>
+              <summary>Cheet Sheet</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    <a
+                      href="https://nerdcave.com/tailwind-cheat-sheet"
+                      target="_blank"
+                      >Sheet</a
                     >
                   </li>
                 </ul>
