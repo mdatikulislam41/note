@@ -258,7 +258,7 @@ details:open summary {
   flex-grow: 1;
   text-align: center;
 }
-.image img {
+.image img,.element_img {
   width: 100%;
   object-fit: cover;
 }
